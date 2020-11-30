@@ -114,8 +114,8 @@ while True:
         webbrowser.open("https://google.com/search?q=%s" % query)
 
     elif (('music' in query) or ("song" in query)):
-         # music_dir = "G:\\Song"
-        #music_dir= 'D:\\OldSongs' #\\ slash is to escape the character
+         # music_dir = " Path "
+        ' #\\ slash is to escape the character
         music_dir = 'D:\\volume E\\MUSIC 3.O\\BOLLYWOOD'
         songs = os.listdir(music_dir)  #listdir is used to enlist all the songs of mentioned directory
         #print(songs)
@@ -123,7 +123,7 @@ while True:
         os.startfile(os.path.join(music_dir,songs[0])) #song[0] will play the first song. using random module, song can be shuffled
 
     elif 'time' in query:
-        time = datetime.datetime.now().strftime("%H:%M%S")
+        time = datetime.datetime.now().strftime("%H:%M:%S")
         speak("Sir, the time is")
         speak(time)
         print(time)
@@ -136,7 +136,7 @@ while True:
         speak("it's good to know, sir")
 
     elif 'who created you' in query:
-        speak("I have been created by Utkarsh")
+        speak("I have been created by Sanchit") # Write your name
 
     elif "which day it is" in query: 
         tellDay()
