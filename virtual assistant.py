@@ -63,7 +63,7 @@ def takeCommand(): #it takes microphone input from the user and return the strin
          print("Listening...")
          r.pause_threshold = 1 #it refers to the amount of time gap after which the audio is supposed to be complete
          r.energy_threshold =300
-         audio=r.listen(source) #digitaldata of whatsoever hs been spoken will be stored in audio
+         audio=r.listen(source, None, 10) #digitaldata of whatsoever hs been spoken will be stored in audio
      try:
       print("Recognising...")
       query=r.recognize_google(audio,language="en-in")
