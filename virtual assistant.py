@@ -158,5 +158,5 @@ while True:
         #subprocess.call("shutdown / h")
         exit()
         
-    speak("sir, do you have any other work!")
+    speak("sir, do you have any other work!!")
      
